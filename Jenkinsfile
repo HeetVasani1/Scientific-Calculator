@@ -47,5 +47,14 @@ pipeline {
                     }
             }
         }
+        stage('Stage 4: Push docker image to hub') {
+            steps{
+                script{
+                    docker.withRegistry('', 'docker'){
+                        docker_image.push()
+                        }
+                    }
+            }
+        }
     }
 }

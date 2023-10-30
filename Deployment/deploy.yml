@@ -4,7 +4,7 @@
   tasks:
     - name: Pull image
       docker_image:
-        name: heetvasani1/scientificcalculatorr:latest
+        name: heetvasani1/scientificcalculator:latest
         source: pull
     - name: Start docker service
       service:
